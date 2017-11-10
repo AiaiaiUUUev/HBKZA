@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/reccyclerChat"
+        android:layout_above="@+id/bottom_LL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/material_drawer_selected" />
+
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottom_LL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+
+        <ImageButton
+            android:id="@+id/btn_emoticon"
+            android:layout_width="45dp"
+            android:layout_height="42dp"
+            android:background="@color/transparent_background"
+            android:padding="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/smile_chat" />
+
+        <EditText
+            android:hint="Сообщение"
+            android:textColorHint="@color/light_gray"
+            android:imeOptions="flagNoExtractUi"
+            android:id="@+id/editTextChat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black" />
+
+        <ImageButton
+            android:id="@+id/sentButton"
+            android:layout_width="51dp"
+            android:layout_height="42dp"
+            android:background="@color/transparent_background"
+            android:padding="7dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sent_message" />
+    </LinearLayout>
+</RelativeLayout>

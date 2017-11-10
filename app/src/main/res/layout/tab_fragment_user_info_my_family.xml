@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/addMemberOfFimilyBTN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/bpBlue"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:padding="12dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/ic_add_member"
+                android:src="@drawable/ic_plus_member"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:text="Добавить члена Семьи" />
+        </LinearLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_my_family"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            android:paddingTop="10dp"
+            android:visibility="gone"></android.support.v7.widget.RecyclerView>
+
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

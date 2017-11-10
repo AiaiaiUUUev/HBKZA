@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.github.greasemonk:timetable-1.2.0">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/2181c77408c84cb06c2ccaa4a396021b0553288b/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/2181c77408c84cb06c2ccaa4a396021b0553288b/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.greasemonk/timetable/1.2.0/dc3864ff5afad9b098ee920f3808145f2d5dbf97/timetable-1.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

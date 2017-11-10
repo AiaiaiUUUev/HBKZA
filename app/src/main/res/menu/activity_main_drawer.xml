@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <group
+        android:id="@+id/grp1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_search_doctors"
+            android:icon="@drawable/ic_search_icon"
+            android:title="Главная" />
+        <item
+            android:id="@+id/nav_indicator_diary"
+            android:icon="@drawable/ic_indicator_diary"
+            android:title="Дневник показателей" />
+        <item
+            android:id="@+id/nav_calendar"
+            android:icon="@drawable/ic_calendar_icon"
+            android:title="Календарь" />
+        <item
+            android:id="@+id/nav_message"
+            android:icon="@drawable/ic_messages_icon"
+            android:title="Сообщения" />
+        <item
+            android:id="@+id/nav_visit"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Визиты" />
+
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_user_icon"
+            android:title="Аккаунт" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings_icon"
+            android:title="Настройки" />
+
+    </group>
+    <group
+        android:id="@+id/grp2"
+        android:checkableBehavior="single">
+        <item xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/nav_exit"
+            android:title="Выйти из акаунта" />
+    </group>
+
+</menu>
+
+

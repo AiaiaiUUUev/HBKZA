@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/main_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff">
+
+        <com.example.d.healthbook.UI.MyToolbar
+            android:id="@+id/main_page_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            app:layout_collapseMode="pin"
+            app:layout_scrollFlags="scroll|snap"
+            app:theme="@style/ToolBarTheme">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/toolbar_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:ellipsize="end"
+                    android:gravity="end"
+                    android:paddingRight="57dp"
+                    android:text="Общий чат"
+                    android:textColor="@color/material_drawer_primary_text"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/people_chat_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:ellipsize="end"
+                    android:gravity="end"
+                    android:maxLines="1"
+                    android:paddingRight="57dp"
+                    android:text="Вы,Екатерина Воронкова,Жамал-Сау"
+                    android:textColor="@color/gray_color"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="5dp"
+                android:gravity="center">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/profileAvaChatPreviewIV"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_icon_people_chat"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:background="@drawable/chat_backround_see_profile"
+                    />
+            </RelativeLayout>
+        </com.example.d.healthbook.UI.MyToolbar>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_above="@+id/bottom_LL"
+            android:id="@+id/reccyclerChat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/material_drawer_selected"
+           />
+
+
+        <LinearLayout
+            android:id="@+id/bottom_LL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+
+            <ImageButton
+                android:layout_marginStart="3dp"
+                android:layout_gravity="center"
+                android:id="@+id/btn_emoticon"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:background="@drawable/ic_smile_chat"
+                android:scaleType="centerCrop" />
+
+            <View
+                android:layout_gravity="center"
+
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:background="@color/light_gray" />
+
+            <ImageButton
+                android:layout_gravity="center"
+                android:id="@+id/add_file"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:background="@drawable/ic_add_file_img"
+                android:scaleType="centerCrop" />
+            <View
+                android:layout_gravity="center"
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:background="@color/light_gray" />
+
+            <EditText
+                android:id="@+id/editTextChat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Сообщение"
+                android:imeOptions="flagNoExtractUi"
+                android:textColor="@color/black"
+                android:textColorHint="@color/light_gray" />
+
+            <ImageButton
+                android:layout_marginRight="3dp"
+                android:layout_gravity="center"
+                android:id="@+id/sentButton"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:background="@color/transparent_background"
+                android:scaleType="centerCrop"
+                android:src="@drawable/sent_message" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

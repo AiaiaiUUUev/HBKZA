@@ -1,0 +1,11 @@
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@android:id/text1"
+    android:background="@color/white"
+    style="?android:attr/spinnerDropDownItemStyle"
+    android:maxLines="1"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:ellipsize="marquee"
+    android:padding="5dip"
+    android:textColor="@color/material_drawer_primary_icon" />

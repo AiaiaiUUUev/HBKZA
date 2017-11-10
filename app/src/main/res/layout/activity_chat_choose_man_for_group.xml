@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.example.d.healthbook.UI.MyToolbar
+        android:id="@+id/main_page_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="?attr/colorPrimary"
+        android:contentInsetStart="0dp"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/ToolBarTheme">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:text="Выберите участников группы"
+            android:textColor="@color/bpBlue"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/add_group_man_chat"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="end"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ic_filter_chat" />
+
+
+    </com.example.d.healthbook.UI.MyToolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lowgray"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/quantityPeopleGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="10dp"
+            android:text="Выбрано: 0"
+            android:textColor="@color/colorDarkGray" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerShowAddManGroup"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"></android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recylcerShowPeople"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingBottom="55dp"></android.support.v7.widget.RecyclerView>
+
+        <LinearLayout
+            android:id="@+id/ly_bar_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/floatingActionButton"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:src="@drawable/drawable_ok_btn"
+                app:backgroundTint="@color/greeeen"
+                app:borderWidth="0dp"
+                app:fabSize="normal" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

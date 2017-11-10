@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        />
+
+    <TextView
+        android:id="@+id/text_field"
+        android:text="ПОЛ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:drawableRight="@drawable/ic_spinner_arrow"
+        android:drawableEnd="@drawable/ic_spinner_arrow"
+        android:padding="10dp"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        />
+
+    <include layout="@layout/map_btn_pair" />
+
+</LinearLayout>

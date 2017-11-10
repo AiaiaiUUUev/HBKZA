@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.yarolegovich:sliding-root-nav-1.0.2">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/c5d1c0eacc96a9378da3706d619cd988d3b5ddff/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/c5d1c0eacc96a9378da3706d619cd988d3b5ddff/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.yarolegovich/sliding-root-nav/1.0.2/731240a65ad9894477d547950b751ae7a0780cb5/sliding-root-nav-1.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

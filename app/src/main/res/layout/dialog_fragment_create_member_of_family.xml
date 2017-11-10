@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="370dp"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:fillViewport="true"
+    >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="330dp"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Новый член семьи"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/colorGray"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <EditText
+                android:paddingStart="20dp"
+                android:paddingBottom="30dp"
+                android:id="@+id/nameProfileMember"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/light_gray"
+                android:hint="Имя"
+                android:inputType="text"
+                android:lines="1"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textColorHint="@color/colorGray" />
+
+            <EditText
+                android:paddingStart="20dp"
+                android:paddingBottom="30dp"
+                android:id="@+id/surnameProfileMember"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/light_gray"
+                android:hint="Фамилия"
+                android:inputType="text"
+                android:lines="1"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textColorHint="@color/colorGray" />
+
+            <EditText
+                android:paddingStart="20dp"
+                android:paddingBottom="30dp"
+                android:id="@+id/middleameProfileMember"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/light_gray"
+                android:hint="Отчество"
+                android:inputType="text"
+                android:lines="1"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textColorHint="@color/colorGray" />
+
+            <Spinner
+                android:paddingLeft="15dp"
+                android:paddingBottom="30dp"
+                android:id="@+id/spinnerEditMemberGender"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="@color/light_gray"
+                />
+
+            <Spinner
+                android:paddingLeft="15dp"
+                android:paddingBottom="28dp"
+                android:id="@+id/spinnerEditMemberRole"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="@color/light_gray"
+                />
+
+            <EditText
+                android:paddingStart="20dp"
+                android:paddingBottom="30dp"
+                android:id="@+id/birthdateProfileMember"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/light_gray"
+                android:hint="Дата рождения"
+                android:inputType="date"
+                android:lines="1"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textColorHint="@color/colorGray" />
+
+            <EditText
+                android:paddingStart="20dp"
+                android:paddingBottom="30dp"
+                android:id="@+id/heightProfileMember"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/light_gray"
+                android:hint="Рост"
+                android:inputType="text"
+                android:lines="1"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textColorHint="@color/colorGray" />
+
+            <EditText
+                android:paddingStart="20dp"
+                android:paddingBottom="30dp"
+                android:id="@+id/weightProfileMember"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/light_gray"
+                android:hint="вес"
+                android:inputType="text"
+                android:lines="1"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textColorHint="@color/colorGray" />
+
+            <EditText
+                android:paddingStart="20dp"
+                android:paddingBottom="30dp"
+                android:id="@+id/email_et_member"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/light_gray"
+                android:hint="E-mail"
+                android:imeOptions="actionSend"
+                android:inputType="textEmailAddress"
+                android:lines="1"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textColorHint="@color/colorGray" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+
+                android:id="@+id/clickBtnExitProfileMember"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/my_button_shape"
+                android:text="отмена"></Button>
+
+            <Button
+                android:id="@+id/clickBtnSaveProfileMember"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/my_button_shape_green"
+                android:text="добавить"></Button>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

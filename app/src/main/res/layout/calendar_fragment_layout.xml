@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.example.d.healthbook.UI.CompactCalendarView.CompactCalendarView
+                android:id="@+id/compactcalendar_view"
+                android:layout_width="fill_parent"
+                android:layout_height="250dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                app:compactCalendarBackgroundColor="@color/colorWhite"
+                app:compactCalendarCurrentDayBackgroundColor="@color/bpBlue"
+                app:compactCalendarCurrentSelectedDayBackgroundColor="@color/bpBlue"
+                app:compactCalendarMultiEventIndicatorColor="@color/bpBlue"
+                app:compactCalendarTargetHeight="250dp"
+                app:compactCalendarTextColor="@color/colorBlack"
+                app:compactCalendarTextSize="12sp" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fabCalendarEvent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/compactcalendar_view"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="219dp"
+                android:clickable="true"
+                android:src="@drawable/pen"
+                app:backgroundTint="@color/bpBlue" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/compactcalendar_view"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_field_current_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:text="Пн, 22 мая"
+                    android:textColor="@color/bpBlue"
+                    android:textSize="20dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Прогноз:"
+                        android:textColor="@color/light_gray"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" срок Зачатия"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerCalendar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

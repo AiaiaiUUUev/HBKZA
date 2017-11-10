@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:nestedScrollingEnabled="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Рейтинг филиала"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/light_gray"
+            android:textSize="16dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="70"
+                android:text="Общий рейтинг"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_weight="30"
+                android:orientation="horizontal">
+
+                <RatingBar
+                    android:id="@+id/rating"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:isIndicator="true"
+                    android:max="5"
+                    android:numStars="5"
+                    android:rating="5"
+                    android:stepSize="0.1"
+                    android:theme="@style/MYMYRatingBar" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:text="5"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="О филиале:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/light_gray"
+            android:textSize="16dp" />
+
+        <TextView
+            android:paddingEnd="10dp"
+            android:textSize="20dp"
+            android:id="@+id/pagerTVClinicInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:text="Шон Пенн с подведенными глазами и высокой прической как у Роберта Смита из The Cure — стареющий рокер по имени Шайенн, который бросил карьеру из-за малоприятного инцидента, а теперь инфантильно проживает жизнь где-то в Дублине. Ему приходится решиться на смелый шаг и перелететь океан — его отец умирает в Нью-Йорке. Шайенн, естественно, успевает только к похоронам, и вот тут-то и начинается роуд-муви. Герой пытается найти нациста, мучившего отца в концлагере, и в его поисках объезжает полстраны. Шон Пенн в фильме играет не только накрашенным лицом, но и голосом, так что смотреть трагикомедию Соррентино советуем в оригинале."
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+</ScrollView>

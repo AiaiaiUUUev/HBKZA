@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_height="wrap_content">
+<TextView
+    android:id="@+id/cityNameTV"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/colorDarkAqua"
+    android:text="1111111"/>
+    <TextView
+        android:id="@+id/clinicNameTV"
+        android:textColor="@color/colorDarkAqua"
+        android:text="1111111"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/experienceTV"
+        android:textColor="@color/colorDarkAqua"
+        android:text="1111111"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/genderTV"
+        android:textColor="@color/colorDarkAqua"
+        android:text="1111111"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/infoDS_TV"
+        android:textColor="@color/colorDarkAqua"
+        android:text="1111111"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/nameDocTV"
+        android:textColor="@color/colorDarkAqua"
+        android:text="1111111"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/surnameDocTV"
+        android:textColor="@color/colorDarkAqua"
+        android:text="1111111"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/specialityDocTV"
+        android:textColor="@color/colorDarkAqua"
+        android:text="1111111"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/imageDoIV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

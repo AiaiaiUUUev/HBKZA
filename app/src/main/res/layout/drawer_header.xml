@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="60dp">
+
+    <LinearLayout
+        android:id="@+id/main_header_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingEnd="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingStart="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_imageMenu"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/profile" />
+
+            <TextView
+                android:id="@+id/first_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/profile_imageMenu"
+                android:layout_toRightOf="@id/profile_imageMenu"
+                android:text="Ахмеджан"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/last_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/first_name"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/profile_imageMenu"
+                android:layout_toRightOf="@id/profile_imageMenu"
+                android:text="Пшебыславский"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/main_header_container"
+        android:background="@color/accent"
+        android:minHeight="1px" />
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="14dp"
+        android:text="Персональные данные:"
+        android:textColor="@color/light_gray"
+        android:textSize="15dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="33dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Пол: "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/colorBlackLow"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/userGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Дженский"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/colorBlackLow"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="33dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Дата рождения: "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/colorBlackLow"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/birthdateUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="1999.20.10"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/colorBlackLow"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

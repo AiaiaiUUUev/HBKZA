@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.example.d.healthbook.UI.MyToolbar
+        android:id="@+id/main_page_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        app:layout_collapseMode="pin"
+        app:layout_scrollFlags="scroll|snap"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/ToolBarTheme">
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_marginLeft="56dp"
+            android:layout_marginRight="56dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/experienceTVINFO"
+            android:background="@color/white"
+            app:tabIndicatorColor="@color/bpBlue"
+            app:tabMode="scrollable"
+            app:tabSelectedTextColor="@color/bpBlue"
+            app:tabTextColor="@color/black" />
+    </com.example.d.healthbook.UI.MyToolbar>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@android:id/progress">
+        <shape
+            android:shape="oval"
+            android:thickness="6sp">
+            <solid android:color="@color/colorDarkAqua" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:text="Выберите фильтр поиска"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/black"></TextView>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_gravity="center"
+            android:background="@color/bpBlue"
+            android:id="@+id/allCompilationBtnDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="вся подборка"></Button>
+
+        <CheckBox
+            android:clickable="true"
+            android:id="@+id/news_chBox_Feed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:buttonTint="@color/bpBlue"
+            android:checked="false"
+            android:fontFamily="monospace"
+            android:text="Новости"
+            android:textAllCaps="true"
+            android:textColor="@color/bpBlue"
+            android:textColorLink="@color/bpBlue"
+            android:textCursorDrawable="@color/bpBlue"
+            android:textDirection="anyRtl"
+             />
+
+        <CheckBox
+            android:clickable="true"
+            android:id="@+id/status_chBox_Feed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:buttonTint="@color/bpBlue"
+            android:checked="false"
+            android:fontFamily="monospace"
+            android:text="Cтатусы"
+            android:textAllCaps="true"
+            android:textColor="@color/bpBlue"
+            android:textColorLink="@color/bpBlue"
+            android:textCursorDrawable="@color/bpBlue"
+            android:textDirection="anyRtl"
+           />
+
+    </LinearLayout>
+    <Button
+        android:layout_gravity="center"
+        android:background="@color/dark_blue"
+        android:id="@+id/clickBtnFilterFeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="применить"></Button>
+</LinearLayout>

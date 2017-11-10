@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="org.sufficientlysecure:html-textview-2.0">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/b496447b541298a389eeee4ff676da29a9449dcb/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/b496447b541298a389eeee4ff676da29a9449dcb/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.sufficientlysecure/html-textview/2.0/84e7d47630e884aedd09dd1569a9419f3267e3a/html-textview-2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

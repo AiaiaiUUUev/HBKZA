@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:background="#fff"
+        android:id="@+id/main_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.example.d.healthbook.UI.MyToolbar
+            android:id="@+id/main_page_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            app:layout_collapseMode="pin"
+            app:layout_scrollFlags="scroll|snap"
+            app:theme="@style/ToolBarTheme">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:text="@string/app_name"
+                android:textColor="@color/bpBlue"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </com.example.d.healthbook.UI.MyToolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+
+        android:id="@+id/titleNewsInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DDDDDDD"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/categoryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DDDDDDD"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="15dp" />
+
+    <ImageView
+        android:id="@+id/imageNewsInfo"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:padding="10dp"
+            android:id="@+id/bodyTextNews"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="DDDDDDD"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+    </ScrollView>
+</LinearLayout>
+

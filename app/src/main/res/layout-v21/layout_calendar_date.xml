@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_item_fl"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="7dp">
+
+
+    <!--<ImageView-->
+    <!--android:id="@+id/selected_date_IV"-->
+    <!--android:visibility="invisible"-->
+    <!--android:src="@drawable/selected_date_xml"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"/>-->
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/ovulation_mark_solid_red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <ImageView
+            android:padding="3dp"
+            android:src="@drawable/ovulation_date_solid_red"
+            app:layout_aspectRatio="100%"
+            app:layout_widthPercent="100%" />
+    </android.support.percent.PercentRelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/selected_date_PRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <ImageView
+            android:padding="1dp"
+            android:src="@drawable/selected_date_xml"
+            app:layout_aspectRatio="100%"
+            app:layout_widthPercent="100%" />
+    </android.support.percent.PercentRelativeLayout>
+
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/event_mark_PRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <ImageView
+            android:src="@drawable/evented_date_xml"
+            app:layout_aspectRatio="100%"
+            app:layout_widthPercent="100%" />
+    </android.support.percent.PercentRelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/ovulation_mark_PRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <ImageView
+            android:src="@drawable/ovulation_date_xml"
+            app:layout_aspectRatio="100%"
+            app:layout_widthPercent="100%" />
+
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/drugs_mark_PRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <ImageView
+            android:src="@drawable/drugs_date_xml"
+            app:layout_aspectRatio="100%"
+            app:layout_widthPercent="100%" />
+    </android.support.percent.PercentRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/date_item_TV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="25"
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+
+</FrameLayout>

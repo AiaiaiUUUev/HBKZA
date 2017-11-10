@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:orientation="horizontal"
+    >
+
+
+    <CheckBox
+        android:id="@+id/progressChBx"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:buttonTint="@color/bpBlue"
+        android:checked="false"
+        android:clickable="false"
+        android:fontFamily="monospace"
+        android:paddingTop="10dp"
+        android:textAllCaps="true"
+        android:textColor="@color/bpBlue"
+        android:textColorLink="@color/bpBlue"
+        android:textCursorDrawable="@color/bpBlue"
+        android:textDirection="anyRtl"
+        android:visibility="gone" />
+
+    <ImageView
+        android:layout_marginTop="7dp"
+        android:id="@+id/checkboxIMG"
+        android:layout_marginStart="20dp"
+        android:layout_width="10dp"
+        android:layout_height="7dp"
+        android:background="@drawable/ic_checked_gray" />
+
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/infoProgressTV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="90"
+        android:paddingLeft="7dp"
+        android:paddingRight="5dp"
+        android:text="2222222222222222222222222222222222222222222222222222222222222222222222222"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+</LinearLayout>

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="3dp"
+    android:layout_marginLeft="3dp"
+    android:background="#E8E8E8"
+    >
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        app:cardElevation="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        app:cardBackgroundColor="#fff"
+       >
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/bottom_LL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="120dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="20"
+                        android:minHeight="130dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="45"
+                            android:orientation="vertical">
+
+
+                            <com.makeramen.roundedimageview.RoundedImageView
+                                android:id="@+id/clinic_Image_list"
+                                android:layout_width="110dp"
+                                android:layout_height="120dp"
+                                android:layout_margin="5dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/profile"
+                                app:riv_corner_radius="10dp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="80"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/title_info_clinicTV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:ellipsize="end"
+                                    android:maxLines="4"
+                                    android:text="HealthCity – это медицинская сеть, объединяющая в себе инновационную Диагностическую клинику и Центры персональной медицины в г. Алматы. Основой проекта HealthCity является персональная медицина, которая направлена на точную диагностику, индивидуальный подход к предупреждению, ранней диагностике и лечению заболеваний на основе международных стандартов."
+                                    android:textColor="@color/bpBlue"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="3dp"
+                                    android:text="Адрес:"
+                                    android:textColor="@android:color/darker_gray"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/adress_clinic_TV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="end"
+                                    android:maxLines="1"
+                                    android:text="улица Мусабаева 8, Алматы"
+                                    android:textColor="@color/black" />
+
+
+                            </LinearLayout>
+
+                            <!--<LinearLayout-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:orientation="horizontal">-->
+
+                                <!--<TextView-->
+                                    <!--android:layout_width="wrap_content"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_marginRight="3dp"-->
+                                    <!--android:text="Телефон:"-->
+                                    <!--android:textColor="@android:color/darker_gray"-->
+                                    <!--android:textStyle="bold" />-->
+
+                                <!--<TextView-->
+                                    <!--android:id="@+id/telephone_clinic_list"-->
+                                    <!--android:layout_width="wrap_content"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:ellipsize="end"-->
+                                    <!--android:maxLines="1"-->
+                                    <!--android:text=""-->
+                                    <!--android:textColor="@color/black" />-->
+                            <!--</LinearLayout>-->
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/description_of_clinic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="Многопрофильный медицинский центр  начал работать в 2006 году. В 2016 году открыт филиал по ул. Беримжанова 1а, угол ул. Жандосова. Этот центр совмещает в себе реабилитационное отделение, стационар хирургический и диагностическую поликлинику. \n\nВ медицинских центрах "
+                    android:textColor="@android:color/darker_gray"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#c0c0c0"
+                android:minHeight="1px" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:background="#f6f6f6"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1.7"
+                    android:orientation="horizontal"
+                    android:paddingStart="15dp">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginRight="3dp"
+                        android:src="@drawable/star_png"
+                        android:textColor="@android:color/darker_gray"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/clinic_list_star_TV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="1.6"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1.5"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginRight="3dp"
+                        android:src="@drawable/man_png"
+                        android:textColor="@android:color/darker_gray"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/clinic_list_man_TV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="16"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginRight="3dp"
+                        android:src="@drawable/messages_png"
+                        android:textColor="@android:color/darker_gray"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/clinic_list_message_TV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="20"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#c0c0c0"
+                android:minHeight="1px" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
